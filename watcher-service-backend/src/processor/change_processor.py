@@ -17,7 +17,7 @@ class ChangeProcessor:
     Processes file changes, saves to database, and communicates with AI backend
     """
     
-    def __init__(self, ai_backend_url: str = "http://localhost:8000"):
+    def __init__(self, ai_backend_url: str = "http://localhost:5432"):
         self.ai_backend_url = ai_backend_url
         self.ai_timeout = 30
         self.max_retries = 3
